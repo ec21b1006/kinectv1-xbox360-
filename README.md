@@ -89,5 +89,40 @@
 2. Now we will download the ROS package from my github which given below
     ```
     cd ~/kinectv1_ws/src
-    
+    https://github.com/ec21b1006/kinectv1-xbox360-.git
     ```
+3. Now we will go back to our workspace and do catkin_make then sourcing it too
+    ```
+    cd ..
+    catkin_make
+    source devel/setup.bash
+    ```
+4. But wait! before launching you might get an error regarding *rgbd_launch package not found*. To resolve just execute this command in the terminal
+    ```
+    sudo apt install ros-noetic-rgbd-launch
+    ```
+5. Now after doing catkin_make once again we will launch the freenect example for depth registration which allows you to get the point cloud with RGB data superimposed over it.
+    ```
+    catkin_make
+    roslaunch freenect_launch freenect.launch depth_registration:=true
+    ```
+6. Let’s now visualize the topics from Kinect on Rviz, open a new terminal and launch rviz.
+    ```
+    rviz
+    ```
+7. We will now need to setup some parameters on rviz to visualize the depth registration data.
+    - In the ‘Global Options’ set the ‘Fixed Frame’ to ‘camera_link’.
+    - Add ‘pointcloud2’ object and set the topic to ‘/camera/depth_registered/points’
+
+    Now wait for a few seconds to get the points on display!
+
+    You can see Vishnu ji(here preparing for his NPTEL course) in the pointcloud2 vizualisation. . .
+
+    ![image](https://lh3.googleusercontent.com/pyvHgNlx1rwrUYZz1I_7FvWi2HtVgxy7iSpI2JxAAguxdzIwX40gBMxnd1o2ddNHbpuLg4EYaxMkkc9DgsEThUngGgdDh6BQVeZsDebi5x4GBibvv6HDYSUVpU1jmJo-kRZe8upajZCi2VJ0tYV1GP9V18TAPUwU33SKmooKXTT3pstDn_Tt9166E_MbPceebkErxKQrNuVdq6SaqT3MewkCooOaiGvLfoRUV_vyVUreayaf9x-lSzElDvywdCOQO9LucQwCzYFxda13hVhf0moxq3pmXv84t6TMz3zywlpyqrzhqg1xP5Tp1qAJYLjG3AfEU5Zkr8IKjtQ5bsbYR41Ouwsb_g4LpVqXysX6rgLFCKZO_wj4aR5SXCJqdLN_wqRFjAMgIzkC2ny0i63x2AgtKcUthDQpdvVK-UDflSl0fd-HR2H1rMrjpOi3ZrBonr_7_99T5j68o_3fOkxPhsD_FCVEJHc0GWeVvWYW_fp8yfZF-U4IdOsuJoLNDX7dJx0OA-CD2weD8wtdeIepv3h5KAJO4TV8gTr1-vFhlbuvRtavvbfzBmap4lCdBaoZG-gMgwkufFT23XnTL_B3SQrDqo81c7pdviiLWKFrgORqtNu88kfWSjFkZZkjSzsbqeAJrR_DY7UDrGfHyloGkiOwtpGKzankzTqCmRMjRvirWESKr4LqAvQOhc0UNtT3C3fB2FUqE154uOL4cwx4RaGU0w6IUmm9r0-ceHRSL5T7dqA8ceFYZz7p53ICELMzbeRc7IzXwKwyHfkPprMZ-p5__zWey0gTZn3PZX3lSy79nuNYEzxxWgl4eRe8SVpsLMJTbwbh7I1aN5lUIz1cCynz380prHkGhsY928FIXaPvYp0RZfEHu_LabN4e3SC-XeDGmkAY-Ps8mIYF4O-RkqV0yTRu6fF1jle_7pjAMt_G3TgNKFYa3GHH9WyspPbOEtfyRjs9XJWeEjocLC4bpQ=w960-h540-no?authuser=0)
+
+    Yoooo! you configured Kinect v1 xbox360 with ROS too (abb party to banti hai bhai!)
+
+8. Official Datasheet for this camera
+    [https://datasheetspdf.com/pdf-file/899895/MicrosoftCorporation/Kinect_sensor/1](https://datasheetspdf.com/pdf-file/899895/MicrosoftCorporation/Kinect_sensor/1)
+9. References if you face into more issues
+    - [https://github.com/IntelRealSense/realsense-ros/issues/308](https://github.com/IntelRealSense/realsense-ros/issues/308)
