@@ -1,6 +1,6 @@
-# Kinect V1(XBOX360)
+## Kinect V1(XBOX360)
 
-## Using without ROS
+### Using without ROS
 
 1. As always, start with an update and upgrade
 
@@ -70,9 +70,24 @@
     ```
     You should see this
     (context: You are seeing the three pillars from Mech also all three are Rich and ready to give party at any point of time :yum: )
-    
+
     ![image](https://lh3.googleusercontent.com/KQCrJDsalZQ0QqniPS57g3fXtPTHIj9geCURi9UhxM0HTC3mrPY_sq-MQ6008wHDntWNKaRmc7oIyNaEBuPG0NSdH7J9eTGnLO4atNDKpZLLY88iCKzv5KyPc9YKAUAH1KH5UbaZ3os39Y60AP1P750iS-8RtUxPwqEglpvckYcBYRtZ7B-73PAne0yIzJH1OKEuraj37KwGG1BV0CySHBVhHB-JVCzDByKUxwhPnTagJEuMaZkK1y47-I2xrymjDg8xcbQHazc6GNOOPPMhctM2TkZZW91rGbhf-1Wc7KIvmIf43AG3BuCZYSN6zYIVP89KmuN3lUoXfLqKPEHLcX4bEtaDUvVDxxkuoidVmVpBkkCthZVN3pEhW-CipVpYHCQe8gxJ9tzDqSjIS4edezsZGpTFgPWMzqO5g5AT96wQ8Pkw02pQq4KDqZbSV6UGHQ16OlI046gACbo5cRV3Km2oUhswLJS2OT90di7GPGru-dWgZlFCpIYlCBLLmCcPNrDCbZFO5mMpbUgoBMckgJO9FQn-y1IBh-2YDqpzyUQkm_OQrRaXO0JXcwJx9fWMH1VvgpcGxW_2xjII1DFSWoHfnd0P2RQ5ErNkctWuchN6SUBIZeqDQzzK0qGODgvjXaTxh0L-YukWEksaiROFP1PcBBvk8Unb3M5Y5mTgBLCmJvBJVs-1MP_Q_bSfZ2OXwYEjIiJGoh1u7oxLZkLNLd7lBzat9y13QdpG3tliGm4SFhNDTfY8KNxUX59IVSSGWOLQTzvN-cNhOgR6atimsVVyrQ3e-1H6JwX2Ay54Qaz1fzod_Hm3-aYiUJtT3XMVO7-wPYOsWUUNJjg5WRomgNTQFLi3V5qjh514XhgQHqS0MKVKDLg8oFttKABEruKibuyw5Hpl5ovsPsQRFhK5Nf_96yFqnqM8hiuAab2LMM-y2cKy8Dyk0CqlryaCWgIeW-Up8ErXbLOyybqfm72lJA=w282-h231-no?authuser=0)
 12. Also one more bonus you can control the orientation, glowing LED color, change video format, mirror video, and much more. Refer to the screenshot given below.
     ![image](https://lh3.googleusercontent.com/Z9Mz1lU5vmdRxNxl9tzzvKjq7LFxOntHaVdA-jj4cBY_am_ZuFuaYITnDM9RsvmHaGb7c_ba6WEdz_l7iHYELkT702HQKZqZiPj5G0HNafCpshjT0QEm8SfBXVSliXwUEogp7EFZPnIzMHgk12t2NMTyE1InVAHeaxBanEvJrZEBjZJL4UyVwMdfKGT3Y1h3ZDfXRuY43r4NAeBWv-Vtga35WmnzEGZ0bdwWVJnXlUfNuZrFoC-SnrABl1qeXlMBGjeooBUpkYz7zphDz_7tsQNJRhmGhzeBoebUUFfwVFLbxXGw5q-fRtoAB4oE8g25_cWO15RBw9CQuyQez1Skh2KFWP_AlEL_RKdNHNOa50X8xnqkG4WsBI34F9udwHURH-Arl5JTUwUljddznp3CsWN6ya33rgShry-hrJZJKsAdzP_w0CpfkQFe_fj2nvI6VrKR9FyJ_BGK8z9CJs7YF7TMpv77yU__oUPnOFMB8Okf__Cl1eq0jqBY7-fVprvN-i3B8Xyb8pEkqlPI2w7LrGqVrxaH0Mb37tk35YcLJIA1F4CO9qnJfzehbkfsO7s5EyrMdJGlhl71H0u4s6nYOQYO7RSZRZM4u0Zxu6whMBht_GCPs85IyAIHmvqsqgyHSVh4uSYgd6KsfN_F3IqSt13z8K35iSpkAH0UsWN30bRiOAoraaGK7iQ7etUE6J2GXPf_RjeyNwAcByhcTs0Dc-9w7ZbAdt5bSrNay7l2Y0VtVZBHw0WPCS5BL0cOxIdQtir7OTRAQQTq1np2QLKJ6OBvc1IpHlV2omFLeKswwTstzB9VNqZKh6NosL4h8AXSgDhJWkyeFmxD1NRTIgh2l_LG5rucVnBiRo12e6WiXCRnALZBjaO-tby3Zz7vAFGnSO4TFNytzdcR5DZsYhDThf6P_bWAygAZFBuvRytfr8kWF5PSpp5hIY9dRhdBuj7BObon4ovX_HWAlACkaiHrwQ=w936-h61-no?authuser=0)
     To perform these operations you need to select the camera window then click the required key.
 13. Congratulations! Our Kinect now works on Ubuntu! Now give party to me this is Manas the GOD :grin: .
+
+### Using with ROS
+
+1. Now lets make it work with ROS. We need to get some launch files for visualization.
+
+    Now lets make it work with ROS. We need to get some launch files for visualization.
+    ```
+    mkdir -r ~/kinectv1_ws/src
+    ```
+
+2. Now we will download the ROS package from my github which given below
+    ```
+    cd ~/kinectv1_ws/src
+    
+    ```
