@@ -80,8 +80,6 @@
 ### Using with ROS
 
 1. Now lets make it work with ROS. We need to get some launch files for visualization.
-
-    Now lets make it work with ROS. We need to get some launch files for visualization.
     ```
     mkdir -r ~/kinectv1_ws/src
     ```
@@ -123,6 +121,7 @@
     Yoooo! you configured Kinect v1 xbox360 with ROS too (abb party to banti hai bhai!)
 
 8. Official Datasheet for this camera
+
     [https://datasheetspdf.com/pdf-file/899895/MicrosoftCorporation/Kinect_sensor/1](https://datasheetspdf.com/pdf-file/899895/MicrosoftCorporation/Kinect_sensor/1)
 9. References if you face into more issues
     - [https://github.com/IntelRealSense/realsense-ros/issues/308](https://github.com/IntelRealSense/realsense-ros/issues/308)
